@@ -57,7 +57,7 @@ There are two sets of logging performed.
 
 
 ## Unit Testing
-We performed unit testing (`develop/unit_testinf.py`) for `develop/movie_recommender.py` file. The functions  we tested are:
+We performed unit testing (`develop/unit_testing.py`) for `develop/movie_recommender.py` file. The functions  we tested are:
 * `get_director()`
 * `filter_keywords()`
 * `discover_movie()`
