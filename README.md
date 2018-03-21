@@ -25,44 +25,12 @@ Things you need to get it started:
 * [conda](https://anaconda.org/): Either Anaconda or Miniconda is fine for this project.
 * [git](https://git-scm.com/): You will most likely need version control.
 
-## Set up the app
-Below is a brief tutorial to set up the app in a AWS EC2 or Linux. For other systems, the general steps should be the same, but small changes might be needed. 
+## Website link
+[Link to the web app](http://final-deploy-dev.us-west-2.elasticbeanstalk.com/)
 
-1. Update. Install git and conda if you have not done so.
-
-    `sudo yum update`
-
-    `sudo yum install git`
-
-    `wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
-    bash Anaconda3-5.1.0-Linux-x86_64.sh`
-
-2. Clone this GitHub repository to local. Go into the directory, and use the `collegeapp.yml` file to create a conda environment with all required packages and dependecies.
-
-    `conda env create -f collegeapp.yml`
-
-    Then, activate the conda environment by entering `source activate collegeapp`.
-
-3. In the same directory as `collegeapp.yml`, create a file called `config` and paste the following information into the file to configure AWS RDS access.
-
-    `SECRET_KEY = 'development_key'
-    SQLALCHEMY_DATABASE_URI = 'postgresql://collegeconnect:collegeahead@msiawebapp.cg96n7rbldvk.us-east-1.rds.amazonaws.com:5432/msiawebappdb'
-    SQLALCHEMY_TRACK_MODIFICATIONS = True`
-
-4. `app/__init__.py` should have included the line of code: 
-
-    `application.config.from_envvar('APP_SETTINGS', silent=True)`
-    
-    which tells the application to look at the environmental variable `APP_SETTINGS` for the path to your config file. 
-    This means you simply need to set this environmental variable by entering:
-    
-    `export APP_SETTINGS="path/to/where/your/config/file/is.config`
-
-5. Now enter `python application.py`. The app should be running on `http://final-deploy-dev.us-west-2.elasticbeanstalk.com/`. Have fun!
 
 ## Logging
 There are two sets of logging performed. 
-
 1. `application.log` stores the logs of any user interaction with the Beanstalk application.
 
 
