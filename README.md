@@ -37,15 +37,17 @@ Below is a brief tutorial to set up the app in a AWS EC2 or Linux. For other sys
     `wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
     bash Anaconda3-5.1.0-Linux-x86_64.sh`
 
-2. Clone this GitHub repository to local. Go into the directory, and create a conda environment with all required packages and dependecies.
+2. Clone this GitHub repository to local.
+
+3. Go to [Kaggle](https://www.kaggle.com/rounakbanik/the-movies-dataset/data) to downlowd the data to the directory.
+
+4. Go into the directory, and create a conda environment with all required packages and dependecies.
 
     `conda env create -f myenv`
 
-    Then, activate the conda environment by entering `source activate myenv`.
+Then, activate the conda environment by entering `source activate myenv`.
 
-3. Go to [Kaggle](https://www.kaggle.com/rounakbanik/the-movies-dataset/data) to downlowd the data, and save the data in the GitHub folder cloned from the previous step.
-
-4. Now enter `python application.py`. The app should be running. Have fun!
+5. Now enter `python application.py`. The app should be running. Have fun!
 
 ## Website link
 [Link to the web app](http://final-deploy-dev.us-west-2.elasticbeanstalk.com/)
