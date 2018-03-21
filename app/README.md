@@ -1,4 +1,4 @@
 ## Movie Recommender System
 This App Folder included:
-1. flask app
-2. data link: https://www.kaggle.com/rounakbanik/the-movies-dataset/data
+1. HTML templates
+2. web supplements (css file, background photo)
