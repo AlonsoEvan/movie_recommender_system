@@ -15,7 +15,7 @@ Build a movie recommender system to suggest movies for users. Users can get bett
 * Success Criteria: A subjective criteria, which is the user satisfaction on the suggested movies, will be applied to this web app. 
 
 ## Data
-The raw data is from [Kaggle](https://www.kaggle.com/rounakbanik/the-movies-dataset/data). I used `Python 3` to do some EDA and clean the raw data (code in `EDA/EDA.py`). 
+The raw data is from [Kaggle](https://www.kaggle.com/rounakbanik/the-movies-dataset/data). I used `Python 3` to do some EDA and clean the raw data (code in `develop/EDA.ipynb`). 
 
 ## Pivotal Tracker
 [Link to Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2144246)
