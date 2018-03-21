@@ -2,4 +2,4 @@
 
 This folder includes all Sphinx Documentations.
 
-Open '_build/html/py-modindex.html for details'.
+Open `build/html/py-modindex.html for details`.
