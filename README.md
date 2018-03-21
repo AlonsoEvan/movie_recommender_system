@@ -36,6 +36,6 @@ There are two sets of logging performed.
 
 ## Unit Testing
 We performed unit testing for `develop/modeling/model.py` file. The functions we tested are:
-* `filter()`
-* `modeling()`
-* `major_pref_transformation()`
+* `get_director()`
+* `filter_keywords()`
+* `discover_movie()`
