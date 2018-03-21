@@ -25,6 +25,28 @@ Things you need to get it started:
 * [conda](https://anaconda.org/): Either Anaconda or Miniconda is fine for this project.
 * [git](https://git-scm.com/): You will most likely need version control.
 
+## Set up the app
+Below is a brief tutorial to set up the app in a AWS EC2 or Linux. For other systems, the general steps should be the same, but small changes might be needed. 
+
+1. Update. Install git and conda if you have not done so.
+
+    `sudo yum update`
+
+    `sudo yum install git`
+
+    `wget https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+    bash Anaconda3-5.1.0-Linux-x86_64.sh`
+
+2. Clone this GitHub repository to local. Go into the directory, and create a conda environment with all required packages and dependecies.
+
+    `conda env create -f myenv`
+
+    Then, activate the conda environment by entering `source activate myenv`.
+
+3. Go to [Kaggle](https://www.kaggle.com/rounakbanik/the-movies-dataset/data) to downlowd the data, and save the data in the GitHub folder cloned from the previous step.
+
+4. Now enter `python application.py`. The app should be running. Have fun!
+
 ## Website link
 [Link to the web app](http://final-deploy-dev.us-west-2.elasticbeanstalk.com/)
 
